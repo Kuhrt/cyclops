@@ -1,0 +1,48 @@
+.cyclops-home__cyclops {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 33%;
+
+  &::after {
+    content: '';
+    display: block;
+    position: relative;
+    padding-top: 100%;
+    width: 100%;
+  }
+
+  @media (min-width: $breakpoint-tablet) {
+    width: 15%;
+  }
+  @media (min-width: $breakpoint-desktop) {
+    width: 8rem;
+  }
+
+  .cyclops-home-cyclops__outline {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .cyclops-home-cyclops__iris {
+    position: absolute;
+    top: 48%;
+    left: 15%;
+    width: 70%;
+
+    img {
+      width: 2.5rem;
+      transform: translateX(60%);
+
+      @media (min-width: $breakpoint-tablet) {
+        transform: translateX(50%);
+      }
+      @media (min-width: $breakpoint-desktop) {
+        transform: translateX(60%);
+      }
+    }
+  }
+}

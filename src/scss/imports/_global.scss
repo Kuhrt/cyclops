@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+main {
+  background-color: $white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul li,
+figcaption,
+blockquote {
+  color: $black;
+  font-family: $font-league;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+header {
+  nav {
+    ul {
+      margin: 0;
+    }
+  }
+}

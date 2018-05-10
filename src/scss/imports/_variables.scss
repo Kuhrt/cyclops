@@ -1,0 +1,24 @@
+@import "fonts";
+
+/** COLORS */
+$black: #2C2C2C;
+$white: #FEFCF4;
+$red: #ED6E57;
+$green: #96B4A0;
+
+/** MARGINS  */
+$page-margin: 1rem;
+$page-margin-tablet: 2.75rem;
+$page-margin-desktop: 5rem;
+
+/** FONTS */
+$font-league: 'League Mono', sans-serif;
+
+/** BREAKPOINTS */
+$breakpoint-tablet: 600px;
+$breakpoint-tablet-large: 900px;
+$breakpoint-desktop: 1200px;
+$breakpoint-desktop-med: 1600px;
+$breakpoint-desktop-large: 1800px;
+$breakpoint-desktop-xl: 2000px;
+$breakpoint-desktop-huge: 2500px;
