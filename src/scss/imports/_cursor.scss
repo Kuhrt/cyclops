@@ -13,9 +13,9 @@
     left: 50%;
     margin: -0.25rem 0 0 -0.25rem;
     background: $red;
-    border-radius: 45%;
+    border-radius: 50%;
     -webkit-backface-visibility: hidden;
-    opacity: 1;
+    opacity: 0;
     cursor: none;
     z-index: 1000;
     pointer-events: none;
@@ -31,8 +31,9 @@
     width: 2rem;
     margin: -1rem 0 0 -1rem;
     border: 0.125rem solid $red;
-    border-radius: 45%;
+    border-radius: 50%;
     -webkit-backface-visibility: hidden;
+    opacity: 0;
     cursor: none;
     z-index: 1000;
     pointer-events: none;
