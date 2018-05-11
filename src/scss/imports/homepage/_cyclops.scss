@@ -52,12 +52,46 @@
     position: absolute;
     top: 80%;
     left: 50%;
-    background: rgba($red, 0.6);
     width: 0.375rem;
     height: 0;
-    border-radius: 0.1875rem;
-    box-shadow: 0rem 0rem 1rem 0rem rgba($red, 1);
     transform-origin: top left;
     z-index: 2;
+
+    .cyclops-laser__inside {
+      position: relative;
+      background: rgba($red, 0.6);
+      width: 100%;
+      height: 100%;
+      border-radius: 0.1875rem;
+      box-shadow: 0rem 0rem 1rem 0rem rgba($red, 1);
+      z-index: 2;
+
+      .cyclops-laser-inside__bright {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: lighten($red, 20%);
+        opacity: 1;
+        width: 1px;
+        height: 100%;
+      }
+    }
+
+    .cyclops-laser__projectile {
+      position: absolute;
+      top: 0%;
+      left: 5%;
+      background-color: rgba($red, 0.3);
+      width: 90%;
+      height: 5%;
+      border-radius: 50%;
+      animation: 0.25s laserProjectile infinite;
+    }
   }
+}
+
+@keyframes laserProjectile {
+  from { top: 0%; }
+  to { top: 95%; }
 }
