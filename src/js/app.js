@@ -100,6 +100,12 @@ function getDirection(x1, y1, x2, y2) {
 
 // MAKE A NEW CURSOR
 $('.cyclops__home').on('mousemove', moveCursor);
+//Mobile
+$('.cyclops__home').on('click', e => {
+  if ($(window).width() < 1200) {
+    moveCursor(e);
+  }
+});
 
 function moveCursor(e) {
   // Move the dot

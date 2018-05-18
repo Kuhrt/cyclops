@@ -1,9 +1,5 @@
 .cursor {
-  display: none;
-
-  @media (min-width: $breakpoint-desktop) {
-    display: block;
-  }
+  display: block;
 
   .dot {
     position: absolute;
