@@ -46,6 +46,8 @@
       }
 
       &:hover {
+        cursor: none;
+
         @media (min-width: $breakpoint-tablet) {
           color: $red;
         }
