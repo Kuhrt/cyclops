@@ -1,0 +1,11 @@
+@keyframes bigZoomOut {
+  from {
+    background-color: $black;
+    transform: scale(225);
+  }
+
+  to {
+    background-color: $white;
+    transform: scale(1);
+  }
+}

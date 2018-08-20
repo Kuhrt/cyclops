@@ -2,8 +2,11 @@
   position: relative;
   width: 100%;
   height: 100vh;
+  animation: bigZoomOut 0.85s cubic-bezier(0.645, 0.045, 0.355, 1) forwards;
+  z-index: 1;
 
   #cyclops__home {
+    width: 100%;
     height: 100vh;
   }
 
