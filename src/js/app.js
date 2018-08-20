@@ -1,5 +1,6 @@
 // import {TweenMax, Power2, TimelineLite} from "gsap";
 import {TweenLite} from "gsap";
+import Parallax from 'parallax-js';
 
 // NEEDED VARIABLES
 const cursorDot = $('.cursor .dot');
@@ -7,6 +8,10 @@ const cursorRing = $('.cursor .ring');
 const eye = $(".cyclops-home-cyclops__iris");
 const iris = $(".cyclops-home-cyclops__iris svg");
 const laser = $('.cyclops__laser');
+const scene = document.getElementById('cyclops__home');
+const parallax = new Parallax(scene, {
+  relativeInput: true
+});
 
 // MAKE THE MONSTER SHOOT A LASER
 // NOTE: Only if the mouse is still for 5 seconds
